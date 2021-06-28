@@ -1,0 +1,6 @@
+<div class="container-fluid">
+  <h1 class="titulo">Mis amigos</h1>
+  <div *ngFor="let user of userlist">
+    <app-cartauser [imageurl]="user.avatar"[nombre]="user.first_name" [mail]="user.email"></app-cartauser>
+  </div>
+</div>
